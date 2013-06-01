@@ -17,13 +17,11 @@ app.config.from_object(__name__)
 
 @app.route('/')
 def home_page():
-	print "HOMEPAGE"
 	return render_template("index.html")
 
 
 @app.route('/library')
 def library():
-	print "library"
 	return render_template("library.html")
 
 @app.route('/map')
